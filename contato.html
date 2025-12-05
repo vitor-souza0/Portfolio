@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Vitor</title>
+    <meta name="description" content="Entre em contato com Vitor para oportunidades e projetos.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button id="theme-toggle">Alternar Tema</button>
+
+<main class="container">
+
+    <header class="perfil">
+        <img class="perfil__foto" src="img/foto-perfil.jpg" alt="Foto de Vitor sorrindo">
+        <div class="perfil__texto">
+            <h1>Vitor</h1>
+            <p>Desenvolvedor de Software Full Stack</p>
+        </div>
+    </header>
+
+    <section class="contact-form-section">
+        <h2>Entre em Contato</h2>
+        <p class="contact-intro">Preencha o formulário abaixo para enviar uma mensagem.</p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Seu Nome</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Seu E-mail</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Sua Mensagem</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button class="btn" type="submit">Enviar Mensagem</button>
+        </form>
+
+        <p id="form-success" style="display:none; color: var(--cor-acento); margin-top: 15px; font-weight:bold">
+            Obrigado! Sua mensagem foi enviada com sucesso
+        </p>
+    </section>
+
+    <footer class="rodape">
+        <a class="nav-link" href="index.html">Voltar para Links</a>
+        <p>&copy; 2025 | Desenvolvido por Vitor</p>
+    </footer>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

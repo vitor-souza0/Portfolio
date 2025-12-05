@@ -1,0 +1,193 @@
+:root {
+    --cor-fundo: #121212;
+    --cor-container: #1E1E1E;
+    --cor-texto-primario: #FFFFFF;
+    --cor-texto-secundario: #A7A7A7;
+    --cor-acento: #BB86FC;
+    --cor-acento-hover: #a56ef1
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--cor-container);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    text-align: center
+}
+
+.perfil {
+    margin-bottom: 30px
+}
+
+.perfil__foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--cor-acento);
+    object-fit: cover;
+    margin-bottom: 15px
+}
+
+.perfil__texto h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px
+}
+
+.perfil__texto p {
+    font-size: 1rem;
+    color: var(--cor-texto-secundario)
+}
+
+.links ul {
+    list-style: none
+}
+
+.links li {
+    margin-bottom: 15px
+}
+
+.links a {
+    display: block;
+    background-color: var(--cor-acento);
+    color: var(--cor-texto-primario);
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease
+}
+
+.links a:hover {
+    background-color: var(--cor-acento-hover);
+    transform: scale(1.03)
+}
+
+.rodape {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: var(--cor-texto-secundario)
+}
+
+.nav-link {
+    color: var(--cor-acento);
+    text-decoration: none;
+    font-weight: bold
+}
+
+.nav-link:hover {
+    text-decoration: underline
+}
+
+.contact-form-section h2 {
+    font-size: 1.5rem;
+    color: var(--cor-texto-primario);
+    margin-bottom: 0.5rem
+}
+
+.contact-intro {
+    color: var(--cor-texto-secundario);
+    margin-bottom: 2rem
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--cor-texto-secundario)
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--cor-fundo);
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: var(--cor-texto-primario);
+    font-size: 1rem;
+    transition: border-color 0.2s ease
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--cor-acento)
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: var(--cor-acento);
+    color: var(--cor-texto-primario);
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease
+}
+
+.btn:hover {
+    background-color: var(--cor-acento-hover);
+    transform: scale(1.02)
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--cor-acento);
+    color: var(--cor-texto-primario);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 1000
+}
+
+#theme-toggle:hover {
+    transform: scale(1.05);
+    background: var(--cor-acento-hover)
+}
+
+body.light {
+    --cor-fundo: #f5f5f5
+    --cor-container: #ffffff
+    --cor-texto-primario: #000
+    --cor-texto-secundario: #444
+    --cor-acento: #6a4dcf
+    --cor-acento-hover: #583bb8
+}
